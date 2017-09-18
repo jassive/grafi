@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html  lang = " en ">
+<head>
+  <meta  charset = " UTF-8 ">
+  <title> VIDEO </title>
+  <link  rel = " stylesheet "  href = " style.css ">
+</head>
+<body>
+
+   <div  class = "player">
+    <center><video class = "player__video viewer" 
+      src = "video.mp4"> autoplay </video></center>
+
+     <div  class =  "player__controls ">
+       <div  class = " progreso ">
+        <div  class = " progress__filled "> </div>
+       </div>
+       <button  class = " player__button toggle " title = "Reproducir"> Comenzar </button>
+       <input  type = " range "  name = " volumen "  class = " player__slider "  min = " 0 "  max = " 1 "  step = " 0.05 "  value = " 1 ">
+       <Entrada  tipo = " gama "  nombre = " playbackRate "  clase = " player__slider "  min = " 0.5 "  max = " 2 "  paso = " 0.1 "  valor = " 1 ">
+       <button  data-skip = " -10 "  class = " player__button " > «15s </button>
+       <button  data-skip = " 25 "  class = " player__button " > 30s »</button>
+     </div>
+   </div>
+
+  <script  src ="scripts.js "> </script>
+</body>
+</html>

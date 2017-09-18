@@ -1,0 +1,156 @@
+html {
+    tamaño de caja : borde-caja ;
+  }
+  
+  * , * : antes , * : después de {
+    tamaño de caja : heredar ;
+  }
+  
+  cuerpo {
+    margen : 0 ;
+    relleno : 0 ;
+    display : flex ;
+    antecedentes : # 7A419B ;
+    min-altura : 100 vh ;
+    fondo : gradiente lineal ( 135 grados , # 7c1599  0 % , # 921099  48 % , # 7e4ae8  100 % );
+    fondo-tamaño : cubierta ;
+    align-items : center ;
+    justificar-contenido : centro ;
+  }
+  
+  .Player {
+    anchura máxima : 750 px ;
+    borde : 5 px  rgba sólido  ( 0 , 0 , 0 , 0,2 );
+    caja-sombra : 0  0  20 px  rgba ( 0 , 0 , 0 , 0.2 );
+    posición : relativa ;
+    font-size : 0 ;
+    desbordamiento : oculto ;
+  }
+  
+  / * Este css sólo se aplica cuando la pantalla completa está activa. * /
+  .player : fullscreen {
+    max-width : ninguno ;
+    ancho : 100 % ;
+  }
+  
+  .player : -webkit-full-screen {
+    max-width : ninguno ;
+    ancho : 100 % ;
+  }
+  
+  .player__video {
+    ancho : 100 % ;
+  }
+  
+  .player__button {
+    fondo : ninguno ;
+    frontera : 0 ;
+    line-height : 1 ;
+    color : blanco ;
+    text-align : center ;
+    contorno : 0 ;
+    relleno : 0 ;
+    cursor : puntero ;
+    max-width : 50 px ;
+  }
+  
+  .player__button : focus {
+    border-color : # ffc600 ;
+  }
+  
+  .player__slider {
+    ancho : 10 px ;
+    altura : 30 px ;
+  }
+  
+  .player__controls {
+    display : flex ;
+    posición : absoluta ;
+    fondo : 0 ;
+    ancho : 100 % ;
+    transform : translateY ( 100 % ) translateY ( -5 px );
+    transición : todos  .3 s ;
+    envoltura flexible : envoltura ;
+    fondo : rgba ( 0 , 0 , 0 , 0,1 );
+  }
+  
+  .player : hover  .player__controls {
+    transformar : translateY ( 0 );
+  }
+  
+  .player : hover  .progress {
+    altura : 15 px ;
+  }
+  
+  .player__controls  >  * {
+    flex : 1 ;
+  }
+  
+  .progress {
+    flex : 10 ;
+    posición : relativa ;
+    display : flex ;
+    flex-basis : 100 % ;
+    altura : 5 px ;
+    transición : altura 0,3 s ;
+    fondo : rgba ( 0 , 0 , 0 , 0,5 );
+    cursor : ew-redimensionar ;
+  }
+  
+  .progress__filled {
+    ancho : 50 % ;
+    fondo : # ffc600 ;
+    flex : 0 ;
+    flex-basis : 50 % ;
+  }
+  
+  / * css no santo al tipo input type = "range" * /
+  
+  entrada [ tipo = rango ] {
+    -webkit-apariencia : ninguno ;
+    fondo : transparente ;
+    ancho : 100 % ;
+    margen : 0  5 px ;
+  }
+  entrada [ tipo = rango ] : foco {
+    esquema : ninguno ;
+  }
+  entrada [ tipo = rango ] :: - webkit-slider-runnable-track {
+    ancho : 100 % ;
+    altura : 8,4 px ;
+    cursor : puntero ;
+    caja-sombra : 1 px  1 px  1 px  rgba ( 0 , 0 , 0 , 0 ), 0  0  1 px  rgba ( 13 , 13 , 13 , 0 );
+    fondo : rgba ( 255 , 255 , 255 , 0,8 );
+    radio de borde : 1,3 px ;
+    frontera : 0,2 px  rgba sólido  ( 1 , 1 , 1 , 0 );
+  }
+  entrada [ tipo = rango ] :: - webkit-slider-thumb {
+    altura : 15 px ;
+    ancho : 15 px ;
+    radio de borde : 50 px ;
+    fondo : # ffc600 ;
+    cursor : puntero ;
+    -webkit-apariencia : ninguno ;
+    margin-top : -3,5 px ;
+    caja-sombra : 0  0  2 px  rgba ( 0 , 0 , 0 , 0,2 );
+  }
+  entrada [ tipo = rango ] : focus :: - webkit-slider-runnable-track {
+    fondo : # bada55 ;
+  }
+  entrada [ tipo = rango ] :: - moz-range-track {
+    ancho : 100 % ;
+    altura : 8,4 px ;
+    cursor : puntero ;
+    caja-sombra : 1 px  1 px  1 px  rgba ( 0 , 0 , 0 , 0 ), 0  0  1 px  rgba ( 13 , 13 , 13 , 0 );
+    fondo : #ffffff ;
+    radio de borde : 1,3 px ;
+    frontera : 0,2 px  rgba sólido  ( 1 , 1 , 1 , 0 );
+  }
+  entrada [ tipo = rango ] :: - moz-range-thumb {
+    box-shadow : 0  0  0  rgba ( 0 , 0 , 0 , 0 ), 0  0  0  rgba ( 13 , 13 , 13 , 0 );
+    altura : 15 px ;
+    ancho : 15 px ;
+    radio de borde : 50 px ;
+    fondo : # ffc600 ;
+    cursor : puntero ;
+  }
