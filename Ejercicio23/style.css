@@ -1,0 +1,95 @@
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:#D795C5;
+    display:flex;
+    min-height: 100vh;
+    align-items: center;
+  
+    background-image:
+    radial-gradient(circle at 100% 150%, #D795C5 24%,#D795C5 25%, #D795C5 28%,#D795C5 29%, #D795C5 36%, #D795C5 36%, #D795C5 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, #D795C5 24%, #D795C5 25%, #D795C5 28%,#D795C5 29%, #D795C5 36%, #D795C5 36%, #D795C5 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, #D795C5 10%, #D795C5 11%, #D795C5 23%, #D795C5 24%, #D795C5 30%, #D795C5 31%, #D795C5 43%, #D795C5 44%, #D795C5 50%, #D795C5 51%, #D795C5 63%,#D795C5 64%, #D795C5 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%,  #D795C5 5%, #D795C5 6%, #D795C5 15%, #D795C5 16%, #D795C5 20%, #D795C5 21%, #D795C5 30%,#D795C5 31%, #D795C5 35%, #D795C5 36%, #D795C5 45%, #D795C5 46%, #D795C5 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+  }
+  
+  
+  .voiceinator {
+    padding:2rem;
+    width:50rem;
+    margin:0 auto;
+    border-radius:1rem;
+    position: relative;
+    background:white;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow:0 0 5px 5px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    width:calc(100% + 4rem);
+    margin: -2rem 0 2rem -2rem;
+    padding:.5rem;
+    background: #A52D75;
+    border-bottom: 5px solid #E78CAC;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+    text-shadow:3px 3px 0 #F2B0CF;
+  
+  }
+  
+  .voiceinator input,
+  .voiceinator button,
+  .voiceinator select,
+  .voiceinator textarea {
+    width: 100%;
+    display: block;
+    margin:10px 0;
+    padding:10px;
+    border:0;
+    font-size: 2rem;
+    background:#5E164F;
+    outline:0;
+  }
+  
+  textarea {
+    height: 20rem;
+  }
+  
+  input[type="select"] {
+  
+  }
+  
+  .voiceinator button {
+    background:#F290C6;
+    border:0;
+    width: 49%;
+    float:left;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0;
+    font-size: 2rem;
+    border-bottom: 5px solid #F290C6;
+    cursor:pointer;
+    position: relative;
+  }
+  
+  .voiceinator button:active {
+    top:2px;
+  }
+  
+  .voiceinator button:nth-of-type(1) {
+    margin-right: 2%;
+  }
